@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>B8A3-fruit-brust-website</title>
+    <!-- tailwind and daisy ui cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="container mx-auto mt-12">
+        <!-- navbar section -->
+           <section>
+            <nav class="navbar justify-between flex bg-orange-500 rounded-full py-5">
+
+
+                <div class=" hidden lg:flex">
+                 <ul class="menu menu-horizontal">
+                   <li><a>Item 1</a></li>
+                   <li><a>Item 1</a></li>
+                   <li><a>Item 1</a></li>
+                   <li><a>Item 1</a></li>
+                 </ul>
+               </div>
+
+               <div class=" gap-4">
+                   <img src="./images/logo.png" alt="">
+                   <h1 class="text-2xl font-bold">Fruit Burst</h1>
+               </div>
+
+               <div class="invisible md:visible  flex items-center">
+                   <input class="rounded-full w-80 h-12" type="text">
+                   <i class="fa-solid fa-magnifying-glass -mx-8 text-xl"></i>
+               </div>
+
+                 <div class="dropdown">
+                   <label tabindex="0" class="btn btn-ghost lg:invisible">
+                     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                   </label>
+                   <ul tabindex="0" class="menu dropdown-content  z-[1]  shadow rounded-box -ml-10 mt-5">
+                     <li><a>Item 1</a></li>
+                     <li><a>Item 1</a></li>
+                     <li><a>Item 1</a></li>
+                     <li><a>Item 1</a></li>
+                   </ul>
+                 </div>
+                 <!-- dropdown section -->
+             </div>
+           </section>
+           <!-- banner section -->
+           <section>
+                <div class="banner mt-12">
+                    <div class="hero h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
+                        <div class="hero-overlay bg-opacity-60"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                          <div class="max-w-md">
+                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                            <button class="btn btn-primary">Get Started</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+           </section>
+        </nav>
+    </header>
+</body>
+</html>
