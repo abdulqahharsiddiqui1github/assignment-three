@@ -14,7 +14,7 @@
     <header class="container mx-auto mt-12">
         <!-- navbar section -->
            <section>
-            <nav class="navbar justify-between flex bg-orange-500 rounded-full py-5">
+            <nav class="navbar justify-between flex lg:bg-orange-500 rounded-full py-5">
 
 
                 <div class=" hidden lg:flex">
@@ -52,14 +52,16 @@
            </section>
            <!-- banner section -->
            <section>
-                <div class="banner mt-12">
-                    <div class="hero h-screen" style="background-image: url(https://daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.jpg);">
-                        <div class="hero-overlay bg-opacity-60"></div>
+                <div class="banner mt-12 rounded-full">
+                    <div class="rounded-xl hero min-h-screen" style=" background-image: url(./images/banner1.png)">
+                        <div class="hero-overlay rounded-xl"></div>
                         <div class="hero-content text-center text-neutral-content">
-                          <div class="max-w-md">
-                            <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                            <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
-                            <button class="btn btn-primary">Get Started</button>
+                          <div class="">
+                            <h1 class="mb-5 text-5xl font-extrabold text-7xl">Exotic tastes at your
+                                <br>
+                              doorstep</h1>
+                            <p class="mb-5">We supply highly quality organic products</p>
+                            <button class="btn btn-primary">Shop Now</button>
                           </div>
                         </div>
                       </div>
@@ -67,5 +69,222 @@
            </section>
         </nav>
     </header>
+    <main class="container mx-auto mt-12">
+      <!-- Deal of the day -->
+      
+      <section class="min-h-screen">
+        <div class="hero">
+          <div class="hero-content flex-col lg:flex-row">
+            <div class="text-center lg:text-left space-y-4">
+              <h1 class="text-5xl font-bold">Deal of the day</h1>
+              <p class="w-3/4">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+            </div>
+            <div class="card flex-shrink-0 w-full max-w-sm bg-base-100">
+              <div class="grid grid-flow-col gap-5 text-center items-center justify-center auto-cols-max">
+                <div class="flex gap-4">
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                      <span class="font-extrabold text-12"  style="--value:29;"></span>
+                    </span>
+                    days
+                  </div>
+                  <img src="./images/" alt="3 dot">
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                      <span class="font-extrabold text-12"  style="--value:25;"></span>
+                    </span>
+                    hours
+                  </div>
+                  <img src="./images/" alt="3 dot">
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                      <span class="font-extrabold text-12"  style="--value:15;"></span>
+                    </span>
+                    min
+                  </div>
+                  <img src="./images/" alt="3 dot">
+                </div>
+                <div class="flex gap-4">
+                  <div class="flex flex-col">
+                    <span class="countdown font-mono text-5xl">
+                      <span class="font-extrabold text-12" style="--value:08;"></span>
+                    </span>
+                    second
+                  </div>
+                  <img src="./images/" alt="3 dot">
+                </div>
+              </div>
+          </div>
+        </div>
+        </div>
+
+
+        <!-- cards section here -->
+        <div class="day-card grid grid-cols-4 gap-5">
+          <!--  card 3 design starts from here -->
+          <div class="card mt-4 border-2 border-gray-300/100">
+            <div class="card  bg-base-100 ">
+              <figure><img src="./images/fruit3.png" alt="Shoes" /></figure>
+              <!-- devider -->
+              <div class="flex flex-col w-full px-10">
+                <div class="grid  card place-items-center">12.90$ - 18.85$</div> 
+                <div class="divider"></div> 
+                <div class="grid  card place-items-center">Apples</div>
+              </div>
+              <div class="card-body">
+                <div class="rating rating-lg rating-half">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex justify-center"><!-- Open the modal using ID.showModal() method -->
+                  <button class="cursor-pointer text-red-500 text-2xl font-bold" onclick="my_modal_1.showModal()">Details</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <h3 class="font-bold text-lg">Hello!</h3>
+                      <p class="py-4">Press ESC key or click the button below to close</p>
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 border-2 border-gray-300/100">
+            <div class="card  bg-base-100 ">
+              <figure><img src="./images/fruit4.png" alt="Shoes" /></figure>
+              <!-- devider -->
+              <div class="flex flex-col w-full px-10">
+                <div class="grid  card place-items-center">12.90$ - 18.85$</div> 
+                <div class="divider"></div> 
+                <div class="grid  card place-items-center">Apples</div>
+              </div>
+              <div class="card-body">
+                <div class="rating rating-lg rating-half">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex justify-center"><!-- Open the modal using ID.showModal() method -->
+                  <button class="cursor-pointer text-red-500 text-2xl font-bold" onclick="my_modal_1.showModal()">Details</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <h3 class="font-bold text-lg">Hello!</h3>
+                      <p class="py-4">Press ESC key or click the button below to close</p>
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 border-2 border-gray-300/100">
+            <div class="card  bg-base-100 ">
+              <figure><img src="./images/fruit4.png" alt="Shoes" /></figure>
+              <!-- devider -->
+              <div class="flex flex-col w-full px-10">
+                <div class="grid  card place-items-center">12.90$ - 18.85$</div> 
+                <div class="divider"></div> 
+                <div class="grid  card place-items-center">Apples</div>
+              </div>
+              <div class="card-body">
+                <div class="rating rating-lg rating-half">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex justify-center"><!-- Open the modal using ID.showModal() method -->
+                  <button class="cursor-pointer text-red-500 text-2xl font-bold" onclick="my_modal_1.showModal()">Details</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <h3 class="font-bold text-lg">Hello!</h3>
+                      <p class="py-4">Press ESC key or click the button below to close</p>
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card mt-4 border-2 border-gray-300/100">
+            <div class="card  bg-base-100 ">
+              <figure><img src="./images/fruit4.png" alt="Shoes" /></figure>
+              <!-- devider -->
+              <div class="flex flex-col w-full px-10">
+                <div class="grid  card place-items-center">12.90$ - 18.85$</div> 
+                <div class="divider"></div> 
+                <div class="grid  card place-items-center">Apples</div>
+              </div>
+              <div class="card-body">
+                <div class="rating rating-lg rating-half">
+                  <input type="radio" name="rating-10" class="rating-hidden" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" checked />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-1" />
+                  <input type="radio" name="rating-10" class="bg-orange-500 mask mask-star-2 mask-half-2" />
+                </div>
+                <div class="flex justify-center"><!-- Open the modal using ID.showModal() method -->
+                  <button class="cursor-pointer text-red-500 text-2xl font-bold" onclick="my_modal_1.showModal()">Details</button>
+                  <dialog id="my_modal_1" class="modal">
+                    <form method="dialog" class="modal-box">
+                      <h3 class="font-bold text-lg">Hello!</h3>
+                      <p class="py-4">Press ESC key or click the button below to close</p>
+                      <div class="modal-action">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn">Close</button>
+                      </div>
+                    </form>
+                  </dialog>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- fourth card design end here -->
+        </div>
+      </section>
+    </main>
 </body>
 </html>
